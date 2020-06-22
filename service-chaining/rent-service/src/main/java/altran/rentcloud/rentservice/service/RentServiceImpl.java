@@ -70,7 +70,7 @@ public class RentServiceImpl implements RentService {
 
     private Vehicle getVehicle(int vehicleId){
 
-       return restTemplate.getForObject("http://localhost:9192/services/vehicles/"+vehicleId,Vehicle.class);
+       return restTemplate.getForObject("http://localhost:9092/services/vehicles/"+vehicleId,Vehicle.class);
 
 
     }
