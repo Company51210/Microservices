@@ -31,7 +31,7 @@ public class VehicleController {
     @GetMapping(value = "/{id}")
     public Vehicle getVehicle(@PathVariable int id)
     {
-        log.info("request came on "+LocalDateTime.now());
+        log.info("request came on "+LocalDateTime.now()+"1--------------------------------------");
         return vehicleService.findById(id);
     }
 
