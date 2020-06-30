@@ -1,0 +1,16 @@
+/*
+  Created by  : Vivek Kumar
+  Created on  : 30/06/2020
+  Purpose     : proto file for simple message.
+ */
+
+syntax = "proto3";
+
+option java_package = "altran.protobuf";
+
+message SimpleMessage {
+  int32 id = 1;
+  bool is_simple = 2;
+  string name = 3;
+  repeated int32 sample_list = 4;
+}
