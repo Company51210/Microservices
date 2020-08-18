@@ -21,3 +21,6 @@ Describe details of tipic
 
 Consume a message
 kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic javatechie
+
+
+

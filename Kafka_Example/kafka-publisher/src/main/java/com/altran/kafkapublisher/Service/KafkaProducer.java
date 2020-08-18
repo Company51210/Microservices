@@ -8,19 +8,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class KafkaProducer {
 
-    /*@Autowired
-    private KafkaTemplate<String,String> kafkaTemplate;*/
-
     @Autowired
-    private KafkaTemplate<String,Object> kafkaTemplateObject;
+    private KafkaTemplate<String,Object> kafkaTemplate;
 
     String kafkaTopic = "kafka_micro";
 
-    /*public void send(String message){
+    public void send(String message){
         kafkaTemplate.send(kafkaTopic,message);
-    }*/
+    }
 
     public void sendJson(User user) {
-        kafkaTemplateObject.send(kafkaTopic,user);
+        kafkaTemplate.send(kafkaTopic,user);
     }
 }

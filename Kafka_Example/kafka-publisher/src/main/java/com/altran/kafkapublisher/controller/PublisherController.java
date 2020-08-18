@@ -11,11 +11,11 @@ public class PublisherController {
     @Autowired
     private KafkaProducer kafkaProducer;
 
-    /*@GetMapping("greet/{name}")
+    @GetMapping("greet/{name}")
     public String publishMessage(@PathVariable String name){
         kafkaProducer.send("Welcome Mr " + name);
         return "Data published to Kafka Topic";
-    }*/
+    }
 
     @PostMapping("/greetuser")
     public String publishjsonMessage(@RequestBody User user){
